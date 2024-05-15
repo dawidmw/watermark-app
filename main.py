@@ -119,21 +119,18 @@ signature_entry = tk.Entry(width=30, bd=2, textvariable=entry_default)
 
 
 # --------------------------- font setters --------------------------------- #
-text_var = tk.StringVar()
 font_size_label = tk.Label(window, text="Font Size:")
-font_size_getter = ttk.Combobox(window, width=3, textvariable=text_var)
+font_size_getter = ttk.Combobox(window, width=3)
 font_size_getter['values'] = (12, 14, 16, 18, 20, 22, 24, 26, 28, 36, 48, 62, 70)
 
-text_var2 = tk.StringVar
 font_type_label = tk.Label(window, text="Font Style:")
-font_type_getter = ttk.Combobox(window, width=14, textvariable=text_var2)
+font_type_getter = ttk.Combobox(window, width=14)
 font_type_getter['values'] = ("OpenSans",
                               "Pacifico",
                               "DroidSans")
 
-text_var3 = tk.StringVar
 font_color_label = tk.Label(window, text="Font Color:")
-font_color_getter = ttk.Combobox(window, width=14, textvariable=text_var2)
+font_color_getter = ttk.Combobox(window, width=14)
 font_color_getter['values'] = ("white",
                                "red",
                                "blue",
